@@ -1,0 +1,45 @@
+/* styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+body.dark {
+  --bg-primary: #1a202c; /* Dark mode background color */
+  --text-primary: #ffffff; /* Dark mode text color */
+}
+
+body.dark .bg-gray-800 {
+  background-color: var(--bg-primary);
+}
+
+body.dark .text-white {
+  color: var(--text-primary);
+}
+
+/* Light Mode Styles */
+body.light {
+    --bg-primary: #ffffff; /* Light mode background color */
+    --text-primary: #1a202c; /* Light mode text color */
+  }
+  
+  body.light .bg-gray-800 {
+    background-color: var(--bg-primary);
+  }
+  
+  body.light .text-white {
+    color: var(--text-primary); /* Change text color to dark in light mode */
+  }
+  
+  /* Ensure visibility of text inside cards in light mode */
+  body.light .bg-gray-900 {
+    background-color: #ffffff; /* Light background color for cards in light mode */
+    color: #1a202c; /* Dark text color for cards in light mode */
+  }
+  
+  /* Adjust text color for division and record in light mode */
+  body.light .bg-gray-900 .text-gray-300 {
+    color: #1a202c; /* Dark text color for division and record */
+  }
+  
+  

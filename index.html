@@ -1,23 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Mode Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <nav>
-        <div class="left-side">
-            <img src="assets/logo.png" alt="logo">
-        </div>
-        <div class="right-side">
-            <ul>
-                <li>Home</li>
-                <li>About us</li>
-                <li>Download</li>
-                
-            </ul>
-        </div>
-    </nav>
+<body class="bg-gray-900 text-white transition-colors duration-500 min-h-screen flex flex-col">
+  <!-- Navbar -->
+  <nav class="bg-gray-800 p-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <img src="assets/logo.png" alt="Logo" class="h-10">
+      <ul class="flex space-x-4 justify-center flex-grow">
+        <li><a href="#" class="text-white">Home</a></li>
+        <li><a href="#" class="text-white">About</a></li>
+        <li><a href="#" class="text-white">Services</a></li>
+        <li><a href="#" class="text-white">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" class="bg-gray-600 p-2 rounded">
+        Toggle Theme
+      </button>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <div class="carousel relative shadow-2xl bg-gray-800 mt-8">
+    <!-- Add your carousel content here -->
+  </div>
+
+  <!-- Card Section -->
+  <section class="py-12 bg-gray-800 flex-grow">
+    <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <!-- UFC Fighter Card 1 -->
+      <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+        <h2 class="text-2xl font-bold text-white">Conor McGregor</h2>
+        <p class="text-gray-300">Division: Lightweight</p>
+        <p class="text-gray-300">Record: 22-6-0</p>
+      </div>
+      <!-- UFC Fighter Card 2 -->
+      <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+        <h2 class="text-2xl font-bold text-white">Khabib Nurmagomedov</h2>
+        <p class="text-gray-300">Division: Lightweight</p>
+        <p class="text-gray-300">Record: 29-0-0</p>
+      </div>
+      <!-- UFC Fighter Card 3 -->
+      <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+        <h2 class="text-2xl font-bold text-white">Jon Jones</h2>
+        <p class="text-gray-300">Division: Light Heavyweight</p>
+        <p class="text-gray-300">Record: 26-1-0 (1 NC)</p>
+      </div>
+      <!-- Add more cards as needed -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 p-4 mt-auto">
+    <div class="container mx-auto text-center text-white">
+      &copy; 2024 Your Company. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
